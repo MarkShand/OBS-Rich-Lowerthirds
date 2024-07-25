@@ -25,9 +25,9 @@
     <div class="container mt-2">
         <div class="input-group mb-3">
             <input type="text" id="messageInput" onchange="createMessage()" class="form-control" placeholder="Add <?= $name ?>">
-            <div class="input-group-append">
+            <!-- <div class="input-group-append">
                 <button class="btn btn-primary" onclick="createMessage()">Create</button>
-            </div>
+            </div> -->
         </div>
         <div class="input-group mb-3">
             <input type="text" id="searchInput" class="form-control" onkeyup="searchMessages()" placeholder="Search <?= $name?>">
@@ -42,8 +42,8 @@
             <?php if($name == 'Headlines'): ?>
             <input type="checkbox" class="btn-check" id="btn-check-outlined" onchange="autoplayToggle(this)" autocomplete="off">
             <label class="btn btn-outline-primary" for="btn-check-outlined">Autoplay</label>
-            <?php endif; ?>
             <input type="number" min="4" value="" id="autoplayDelayInput" onkeyup="saveAutoplayDelay(this)" onchange="saveAutoplayDelay(this)" class="form-control" placeholder="Delay in seconds">
+            <?php endif; ?>
          </div>
         <table id="messagesTable" class="table table-bordered">
             <thead>
