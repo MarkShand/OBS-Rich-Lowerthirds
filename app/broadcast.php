@@ -26,7 +26,8 @@
     .table th {
         vertical-align: middle;
     }
-    </style>
+    
+    </style> 
 </head>
 
 <body style="zoom:0.7;">

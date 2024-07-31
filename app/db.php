@@ -24,8 +24,10 @@ function sanitizeInput($data) {
     return htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
 }
 
+
 // Handle POST request
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    
     $action = $_POST['action'];
     switch ($action) {
         case 'create':
